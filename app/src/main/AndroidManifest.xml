@@ -27,7 +27,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".CustomerSignatureActivity" />
-        <activity android:name=".ReceiptActivity"></activity>
+        <activity android:name=".ReceiptActivity" />
+        <activity
+            android:name=".CustomerListActivity"
+            android:label="@string/title_activity_customer_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

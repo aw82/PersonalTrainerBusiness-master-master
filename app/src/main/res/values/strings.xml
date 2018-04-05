@@ -25,4 +25,5 @@
     <string name="cust_sign_textView">Please sign to acknowledge a completed session</string>
     <string name="Signature_line">Signature</string>
     <string name="submit_cust_sign_button">Submit</string>
+    <string name="title_activity_customer_list">CustomerListActivity</string>
 </resources>
