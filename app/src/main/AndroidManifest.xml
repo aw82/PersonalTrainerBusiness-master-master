@@ -34,7 +34,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CustomerSessionActivity" />
         <activity android:name=".NewSessionActivity" />
-        <activity android:name=".NewCustomerActivity"></activity>
+        <activity android:name=".NewCustomerActivity" />
+        <activity android:name=".PictureActivity"></activity>
     </application>
 
 </manifest>
