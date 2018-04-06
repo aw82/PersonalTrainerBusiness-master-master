@@ -35,7 +35,8 @@
         <activity android:name=".CustomerSessionActivity" />
         <activity android:name=".NewSessionActivity" />
         <activity android:name=".NewCustomerActivity" />
-        <activity android:name=".PictureActivity"></activity>
+        <activity android:name=".PictureActivity" />
+        <activity android:name=".BillingInfoActivity"></activity>
     </application>
 
 </manifest>
