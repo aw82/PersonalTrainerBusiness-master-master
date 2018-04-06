@@ -32,7 +32,8 @@
             android:name=".CustomerListActivity"
             android:label="@string/title_activity_customer_list"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CustomerSessionActivity"></activity>
+        <activity android:name=".CustomerSessionActivity" />
+        <activity android:name=".NewSessionActivity"></activity>
     </application>
 
 </manifest>
