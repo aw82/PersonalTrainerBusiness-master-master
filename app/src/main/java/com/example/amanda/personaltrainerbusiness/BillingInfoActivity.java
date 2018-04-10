@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class BillingInfoActivity extends AppCompatActivity {
 
@@ -34,7 +35,14 @@ public class BillingInfoActivity extends AppCompatActivity {
         }
     }
 
-    private void LogOff() {
+    public void LogOff() {
         startActivity(new Intent(this, LoginActivity.class));
     }
+
+    public void GoToReceipt(View view) {
+        startActivity(new Intent(BillingInfoActivity.this, ReceiptActivity.class));
+    }
+
+
+
 }

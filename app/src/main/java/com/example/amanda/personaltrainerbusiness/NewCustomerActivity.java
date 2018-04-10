@@ -36,7 +36,11 @@ public class NewCustomerActivity extends AppCompatActivity {
         }
     }
 
-    private void LogOff() {
+    public void LogOff() {
         startActivity(new Intent(this, LoginActivity.class));
+    }
+
+    public void GoToCustList(View view) {
+        startActivity(new Intent(this, CustomerListActivity.class));
     }
 }

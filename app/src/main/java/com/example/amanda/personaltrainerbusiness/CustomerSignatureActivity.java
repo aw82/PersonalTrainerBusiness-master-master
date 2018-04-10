@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class CustomerSignatureActivity extends AppCompatActivity {
 
@@ -34,7 +35,11 @@ public class CustomerSignatureActivity extends AppCompatActivity {
         }
     }
 
-    private void LogOff() {
+    public void LogOff() {
         startActivity(new Intent(this, LoginActivity.class));
+    }
+
+    public void GoToCustList(View view) {
+        startActivity(new Intent(this, CustomerListActivity.class));
     }
 }

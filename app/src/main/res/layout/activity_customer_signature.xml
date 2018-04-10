@@ -51,6 +51,7 @@
         android:id="@+id/submit_cust_sign_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="GoToCustList"
         android:text="@string/submit_cust_sign_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

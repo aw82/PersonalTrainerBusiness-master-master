@@ -34,7 +34,7 @@ public class ReceiptActivity extends AppCompatActivity {
         }
     }
 
-    private void LogOff() {
+    public void LogOff() {
         startActivity(new Intent(this, LoginActivity.class));
     }
 }
