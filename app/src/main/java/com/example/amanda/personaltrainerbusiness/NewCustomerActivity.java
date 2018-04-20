@@ -1,5 +1,7 @@
 package com.example.amanda.personaltrainerbusiness;
 
+import com.example.amanda.personaltrainerbusiness.Database;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
