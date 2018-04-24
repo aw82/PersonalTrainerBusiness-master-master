@@ -33,6 +33,7 @@ import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
 import static com.example.amanda.personaltrainerbusiness.R.id.email_sign_in_button;
+import static com.example.amanda.personaltrainerbusiness.R.id.password;
 
 /**
  * A login screen that offers login via email/password.
@@ -68,10 +69,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
-        mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
+        mEmailView = (AutoCompleteTextView) findViewById(R.id.Username);
         populateAutoComplete();
 
-        mPasswordView = findViewById(R.id.password);
+        mPasswordView = findViewById(password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -206,12 +207,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
    }
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
-        return email.contains("@");
+        return email.contains("jdoe");
     }
 
     private boolean isPasswordValid(String password) {
         //TODO: Replace this with your own logic
-        return password.length() > 4;
+        return password.contentEquals("@string/password") ;
     }
 
     /**

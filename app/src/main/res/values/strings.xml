@@ -4,12 +4,12 @@
     <!-- Strings related to login -->
     <string name="success_login">Welcome!</string>
     <string name="no_success_login">Your credentials were not recognized.  Please try again.</string>
-    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
     <string name="user_name">jdoe</string>
     <string name="password">welcome1</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_email">This username is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>

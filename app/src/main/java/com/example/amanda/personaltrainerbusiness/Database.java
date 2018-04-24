@@ -33,6 +33,9 @@ public class Database {
             "PHONE_COLUMN";
     public static final String EMAIL_COLUMN =
             "EMAIL_COLUMN";
+    public static final String PICTURE =
+            "PICTURE";
+
     //TODO: Create public field for each column in your table.
     /***/
 
@@ -57,7 +60,7 @@ public class Database {
         // Specify the result column projection. Return the minimum set
         // of columns required to satisfy your requirements.
         String[] result_columns = new String[] {
-                KEY_ID, ADDRESS_COLUMN, PHONE_COLUMN, EMAIL_COLUMN };
+                KEY_ID, ADDRESS_COLUMN, PHONE_COLUMN, EMAIL_COLUMN, PICTURE };
 
         // Specify the where clause that will limit our results.
         String where = ADDRESS_COLUMN + "=" + 1;
@@ -117,10 +120,11 @@ public class Database {
         ContentValues newValues = new ContentValues();
 
         // Assign values for each row.
-        newValues.put(KEY_ID_COLUMN, customerName);
+        newValues.put(KEY_ID, customerName);
         newValues.put(PHONE_COLUMN, phoneValue);
         newValues.put(ADDRESS_COLUMN, addressValue);
         newValues.put(EMAIL_COLUMN, emailValue);
+       // newValues.put(PICTURE, pictureValue);
         // [ ... Repeat for each column / value pair ... ]
 
         // Insert the row into your table
@@ -163,6 +167,23 @@ public class Database {
         SQLiteDatabase db = DBOpenHelper.getWritableDatabase();
         db.delete(DBOpenHelper.DATABASE_TABLE, where, whereArgs);
     }
+
+    public String getName() {
+        return KEY_ID_COLUMN;
+    }
+
+    public String getAddress() {
+        return ADDRESS_COLUMN;
+    }
+
+    public String getPhone_number() {
+        return PHONE_COLUMN;
+    }
+
+    public String getEmail_number() {
+        return EMAIL_COLUMN;
+    }
+
 
     /**
      * Listing 8-2: Implementing an SQLite Open Helper

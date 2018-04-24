@@ -41,6 +41,7 @@ public class NewCustomerActivity extends AppCompatActivity {
     }
 
     public void GoToCustList(View view) {
+
         startActivity(new Intent(this, CustomerListActivity.class));
     }
 
