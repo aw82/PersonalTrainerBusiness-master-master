@@ -1,7 +1,5 @@
 package com.example.amanda.personaltrainerbusiness;
 
-import com.example.amanda.personaltrainerbusiness.Database;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +41,7 @@ public class NewCustomerActivity extends AppCompatActivity {
     }
 
     public void GoToCustList(View view) {
+
         startActivity(new Intent(this, CustomerListActivity.class));
     }
 

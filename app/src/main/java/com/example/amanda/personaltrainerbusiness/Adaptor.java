@@ -66,7 +66,7 @@ public class Adaptor extends ArrayAdapter<Database> implements View.OnClickListe
             viewHolder.KEY_ID_COLUMN = (TextView) convertView.findViewById(R.id.name);
             viewHolder.ADDRESS_COLUMN = (TextView) convertView.findViewById(R.id.address);
             viewHolder.PHONE_COLUMN = (TextView) convertView.findViewById(R.id.phone);
-            viewHolder.EMAIL_COLUMN = (TextView) convertView.findViewById(R.id.email);
+            viewHolder.EMAIL_COLUMN = (TextView) convertView.findViewById(R.id.Username);
 
             result=convertView;
 
